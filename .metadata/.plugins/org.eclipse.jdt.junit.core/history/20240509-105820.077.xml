@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="test5" project="PracticaArrays" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="Test.test5" time="0.011" displayname="test5" uniqueid="[engine:junit-jupiter]/[class:Test.test5]">
+    <testcase name="testMediana" classname="Test.test5" time="0.006" displayname="testMediana()" uniqueid="[engine:junit-jupiter]/[class:Test.test5]/[method:testMediana()]"/>
+    <testcase name="testMedianaMal" classname="Test.test5" time="0.004" displayname="testMedianaMal()" uniqueid="[engine:junit-jupiter]/[class:Test.test5]/[method:testMedianaMal()]"/>
+  </testsuite>
+</testrun>
