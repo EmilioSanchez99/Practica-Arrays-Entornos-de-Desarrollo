@@ -38,7 +38,16 @@ class test2 {
 	}
 	
 	
-	
+	@Test
+	void testNotaMaxima() {
+		int esperada=9;
+		int obtenida=MisArrays.maximaNota(notasBuenas);
+		assertEquals(esperada,obtenida);
+	}
+	@Test
+	void testNotaMinima(){
+		assertThrows(IllegalArgumentException.class,()->MisArrays.maximaNota(notasMalas));
+	}
 	
 	
 	
