@@ -25,7 +25,7 @@ public abstract class MisArrays {
 	/**
 	 * 
 	 * @param array de notas
-	 * @return devuelve la nota maxima del array si es valido
+	 * @return devuelve la nota maxima del array
 	 */
 	public static int maximaNota(int[] array) {
 
@@ -47,7 +47,7 @@ public abstract class MisArrays {
 	/**
 	 * 
 	 * @param array de notas
-	 * @return devuelve la nota minima del array si es valido
+	 * @return devuelve la nota minima del array
 	 */
 	public static int minimaNota(int[] array) {
 
@@ -69,7 +69,7 @@ public abstract class MisArrays {
 	/**
 	 * 
 	 * @param array
-	 * @return devuelve la mediana si el array es valido
+	 * @return devuelve la mediana
 	 */
 	public static float mediana(int[] array) {
 
