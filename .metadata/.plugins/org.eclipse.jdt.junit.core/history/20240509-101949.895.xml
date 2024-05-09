@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="test2" project="PracticaArrays" tests="2" started="2" failures="1" errors="1" ignored="0">
+  <testsuite name="Test.test2" time="0.027" displayname="test2" uniqueid="[engine:junit-jupiter]/[class:Test.test2]">
+    <testcase name="testMediaMal" classname="Test.test2" time="0.023" displayname="testMediaMal()" uniqueid="[engine:junit-jupiter]/[class:Test.test2]/[method:testMediaMal()]">
+      <failure>
+        <expected>class java.lang.IllegalArgumentException</expected>
+        <actual>class java.lang.NullPointerException</actual>
+        org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.NullPointerException&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)&#13;
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)&#13;
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3111)&#13;
+	at Test.test2.testMediaMal(test2.java:37)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+Caused by: java.lang.NullPointerException: Cannot read the array length because "array" is null&#13;
+	at util.MisArrays.mediaNotas(MisArrays.java:12)&#13;
+	at Test.test2.lambda$0(test2.java:37)&#13;
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)&#13;
+	... 6 more&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="testMediaBuena" classname="Test.test2" time="0.003" displayname="testMediaBuena()" uniqueid="[engine:junit-jupiter]/[class:Test.test2]/[method:testMediaBuena()]">
+      <error>java.lang.IllegalArgumentException&#13;
+	at util.MisArrays.mediaNotas(MisArrays.java:14)&#13;
+	at Test.test2.testMediaBuena(test2.java:29)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

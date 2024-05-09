@@ -1,0 +1,44 @@
+package Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import util.MisArrays;
+
+class test2 {
+
+	private static int[]notasBuenas;
+	private static int[]notasMalas;
+	
+	/**
+	 * instanciamos los arrays, uno valido y otro erroneo
+	 */
+	@BeforeAll
+	static void setup() {
+		notasBuenas= new int[]{2,3,8,9,4};
+		notasBuenas= new int[]{2,3,-8,9,4};
+	}
+	/**
+	 * Comprobar que realiza bien la media
+	 */
+	@Test
+	void testMediaBuena() {
+		float esperada=(float) 5.2;
+		float obtenida=MisArrays.mediaNotas(notasBuenas);
+		assertEquals(esperada,obtenida);
+	}
+	/**
+	 * comprobamos que salta exception cuando insertamos valor incorrecto
+	 */
+	@Test
+	void testMediaMal() {
+		Exception exception = assertThrows(IllegalArgumentException.class, () -> MisArrays.mediaNotas(notasMalas));
+
+		String esperado="numero incorrecto";
+		String obtenido=exception.getMessage();
+		assertEquals(esperado,obtenido);
+	}
+
+}

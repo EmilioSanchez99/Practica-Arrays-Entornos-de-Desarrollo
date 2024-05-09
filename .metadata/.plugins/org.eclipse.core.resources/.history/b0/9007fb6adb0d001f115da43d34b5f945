@@ -1,0 +1,31 @@
+package Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+
+import util.MisArrays;
+
+class Test {
+
+	private static int[]notasBuenas;
+	private static int[]notasMalas;
+	
+	/**
+	 * instanciamos los arrays, uno valido y otro erroneo
+	 */
+	@BeforeAll
+	static void setup() {
+		notasBuenas= new int[]{2,3,8,9,4};
+		notasBuenas= new int[]{2,3,-8,9,4};
+	}
+	
+	@Test
+	void testMediaBuena() {
+		float esperada=(float) 8.5;
+		float obtenida=MisArrays.mediaNotas(notasBuenas);
+		assertEquals(esperada,obtenida);
+	}
+	
+
+}
